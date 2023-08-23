@@ -149,28 +149,3 @@
 .d-flex.full-width {
   width: 100%;
 }
-
-/*
-    Misc. utility classes
-*/
-.gap-5 {
-  gap: 5px;
-}
-.gap-10 {
-  gap: 10px;
-}
-.gap-15 {
-  gap: 15px;
-}
-.gap-20 {
-  gap: 20px;
-}
-.gap-25 {
-  gap: 25px;
-}
-.gap-30 {
-  gap: 30px;
-}
-.gap-40 {
-  gap: 40px;
-}
