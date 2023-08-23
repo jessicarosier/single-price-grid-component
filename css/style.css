@@ -1,0 +1,155 @@
+@import "resets.css";
+@import "layout.css";
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-grey: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --primary-font: 'Karla', sans-serif;
+    --sm-font-weight: 400;
+    --lrg-font-weight: 700;
+}
+
+body {
+    font-font: var(--primary-font);
+    font-size: 16px;
+    font-weight: var(--sm-font-weight);
+    letter-spacing: 1px;
+}
+
+.page-wrapper {
+    background-color: var(--light-grey);
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
+.top-row {
+    padding: 50px;
+    background-color: white;
+    justify-content: start;
+    gap: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.top-row h1 {
+    padding-bottom: 10px;
+    color: var(--cyan)
+}
+
+.top-row h2 {
+    color: var(--bright-yellow)
+}
+
+.top-row p {
+    color: var(--grayish-blue)
+}
+
+.bottom-row {
+    padding: unset;
+    justify-content: space-between;
+}
+
+.left-side {
+    background-color: var(--cyan);
+    padding: 70px 50px 50px 50px;
+    color: white;
+    border-bottom-left-radius: 10px;
+}
+
+.left-side h3 {
+    padding-bottom: 10px;
+}
+
+.left-side div {
+    align-items: center;
+    gap: 10px;
+}
+
+.left-side #p1 {
+    font-size: 30px;
+}
+
+.left-side #p2 {
+    opacity: .5;
+}
+
+.left-side #p3 {
+    opacity: .8;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+button {
+    display: block;
+    background-color: var(--bright-yellow);
+    color: white;
+    flex-grow: 1;
+    min-height: 50px;
+    border-radius: 5px;
+    border: unset;
+}
+
+.right-side {
+    padding: 70px 50px 50px 50px;
+    background-color: var(--cyan);
+    opacity: .7;
+    color: white;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+}
+
+.right-side h3 {
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.right-side h4 {
+    opacity: .6;
+    font-size: 18px;
+    font-weight: var(--sm-font-weight);
+}
+
+button:hover {
+    background-color: var(--light-grey);
+    color:var(--cyan)
+}
+
+@media screen and (max-width: 500px) {
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-row {
+        padding:30px
+    }
+    .left-side {
+        padding:30px;
+        border-radius: 0px;
+    }
+    .right-side {
+        padding: 30px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        max-width: 95vw;
+    }
+}
